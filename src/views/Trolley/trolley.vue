@@ -1,7 +1,7 @@
 <template>
-  <div id="shopping">
-    <NavBar class="shopping-nav">
-      <div slot="center" class="home-center">精选商城</div>
+  <div id="trolley">
+    <NavBar class="trolley-nav">
+      <div slot="center" class="home-center">购物车({{counter}})</div>
     </NavBar>
     <router-view></router-view>
   </div>
@@ -10,7 +10,12 @@
 <script>
 import NavBar from 'components/common/navbar/NavBar'
 export default {
-  name: 'shopping',
+  name: 'trolley',
+  data() {
+    return {
+      counter: 0
+    }
+  },
   components:{
     NavBar,
   }
@@ -18,7 +23,7 @@ export default {
 </script>
 
 <style>
-  .shopping-nav{
+  .trolley-nav{
     background-color: var(--color-tint);
   }
 </style>

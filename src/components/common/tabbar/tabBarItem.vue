@@ -20,7 +20,6 @@ export default {
   },
   data() {
     return {
-      // isActive: false,
       active: 'active',
       index: 0
     }

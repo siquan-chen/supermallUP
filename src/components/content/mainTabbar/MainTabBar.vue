@@ -25,6 +25,12 @@
       </tab-bar-item>
 
 
+      <tab-bar-item path = "/trolley" activeColor="green">
+        <img src="~assets/img/dilanxianxingiconyihuifu_huabanfuben.svg" alt="" slot="img">
+        <img src="~assets/img/gouwuche.svg" alt="" slot="img-active">
+        <div slot="text">购物车</div>
+      </tab-bar-item>
+
 
       <tab-bar-item path = "/files" activeColor="blue">
         <img src="~assets/img/wodedangxuan.svg" alt="" slot="img">
@@ -39,8 +45,8 @@
 
 <script>
 
-const TabBar = () => import('../../common/tabbar/tabBar')
-const TabBarItem = () => import('../../common/tabbar/tabBarItem')
+const TabBar = () => import('components/common/tabbar/tabBar')
+const TabBarItem = () => import('components/common/tabbar/tabBarItem')
 export default {
   name: 'MainTabBar',
   components:{

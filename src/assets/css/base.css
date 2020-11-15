@@ -28,6 +28,7 @@ html {
   background: var(--color-background);
   /* rem vw/vh */
   width: 100vw;
+  height: 12000px;
 }
 a {
   text-decoration: none;
